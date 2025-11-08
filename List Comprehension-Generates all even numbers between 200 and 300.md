@@ -1,10 +1,10 @@
-# 🧾 List Comprehension:Generates all even numbers between 200 and 300
-## 🎯 AIM:
+## EX 9 (A) List Comprehension:Generates all even numbers between 200 and 300
+## AIM:
 To write a Python class-based program that generates all even numbers between 200 and 300 using **list comprehension**, and stores them in a list.
 
 ---
 
-## 🧠 ALGORITHM:
+## ALGORITHM:
 
 1. **Start**
 2. Create a class named `program`
@@ -19,9 +19,25 @@ To write a Python class-based program that generates all even numbers between 20
 
 ---
 
-## 💻 PROGRAM:
-Add Code Here
+## PROGRAM:
+```
+class Program:
+    def __init__(self, first,d,last):
+        self.first = first
+        self.d = d
+        self.last=last
+    def display(self):
+        L=[i for i in range(self.first,self.last+1,self.d)]
+        return L
 
+
+a=int(input())
+b=int(input())
+c=int(input())
+Series = Program(a,b,c+1)
+print(Series.display())
+```
 ## OUTPUT:
+<img width="93" height="188" alt="image" src="https://github.com/user-attachments/assets/3d10facd-f05b-46e9-a164-6ec271bda908" />
 
 ## RESULT:
