@@ -1,10 +1,10 @@
-# 🧮 SORTING ALGORITHMS: Insertion Sort Using a Class
+## EX 9 (E) SORTING ALGORITHMS: Insertion Sort Using a Class
 
 This program demonstrates how to implement the **Insertion Sort algorithm** using a Python class. It allows the user to input a list of numbers, sorts them using the insertion sort technique, and displays the sorted list.
 
 ---
 
-## 🎯 Aim
+## Aim
 
 To develop a Python class with functions to:
 - Create a list of integers
@@ -13,7 +13,7 @@ To develop a Python class with functions to:
 
 ---
 
-## 🧠 Algorithm
+## Algorithm
 
 1. **Start the program**
 2. **Define a class** `InsertionSorter`
@@ -33,10 +33,44 @@ To develop a Python class with functions to:
 
 ---
 
-## 💻 PROGRAM:
+## PROGRAM:
+```class InsertionSorter:
+    def __init__(self):
+        self.N = int(input())
+        self.L = []
 
-ADD CODE HERE
+    def create_list(self):
+        print()
+        for i in range(self.N):
+            x = int(input())
+            self.L.append(x)
+
+    def insertion_sort(self):
+        for i in range(1, len(self.L)):
+            key = self.L[i]
+            j = i - 1
+            while j >= 0 and key < self.L[j]:
+                self.L[j + 1] = self.L[j]
+                j -= 1
+            self.L[j + 1] = key
+
+    def print_list(self):
+        for num in self.L:
+            print(num, end=" ")
+        print()
+
+L1 = InsertionSorter()
+L1.create_list()
+print("Before Sorting:")
+L1.print_list()
+L1.insertion_sort()
+print("After Sorting:")
+L1.print_list()
+```
+
 
 ## OUTPUT:
+<img width="455" height="576" alt="image" src="https://github.com/user-attachments/assets/208d46af-05e5-49e9-ab26-dddd1455da56" />
 
 ## RESULT:
+  Thus, the **Insertion Sort algorithm** is implemented using python program.
