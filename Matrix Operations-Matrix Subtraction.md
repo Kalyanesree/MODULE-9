@@ -1,11 +1,11 @@
-# # ➖ Matrix Operations-Matrix Subtraction in Python
+## EX 9 (D) Matrix Operations-Matrix Subtraction in Python
 
-## 🎯 AIM:
+## AIM:
 To write a Python program that reads two matrices from the user and performs matrix subtraction.
 
 ---
 
-## 🧠 ALGORITHM:
+## ALGORITHM:
 
 1. **Start**
 2. Create variables `r` and `c` for rows and columns
@@ -21,10 +21,35 @@ To write a Python program that reads two matrices from the user and performs mat
 
 ---
 
-## 💻 PROGRAM:
-ADD CODE HERE
+## PROGRAM:
+```
+def create_matrix(n,m):
+    M=[]
+    for i in range(n):
+        row=[]
+        for j in range(m):
+            x=int(input())
+            row.append(x)
+        M.append(row)
+    return M 
+r,c=input().split()
+A=create_matrix(int(r),int(c))
+B=create_matrix(int(r),int(c))
+C=[]
+for i in range(int(r)):
+    R=[]
+    for j in range(int(c)):
+        item=A[i][j]-B[i][j]
+        R.append(item)
+    C.append(R)
+print(A)
+print(B)
+print(C)
+```
 
 ## OUTPUT:
+<img width="801" height="873" alt="image" src="https://github.com/user-attachments/assets/c8dfeae0-23e4-4b52-954a-f8ad2bba3dc6" />
 
 ## RESULT:
+  Thus, the python program that reads two matrices from the user and performs matrix subtraction is executed successfully.
 
