@@ -1,4 +1,4 @@
-# EX (9) B List Comprehension:Transpose of Matrix 
+# EX 9 (B) List Comprehension:Transpose of Matrix 
 
 ## AIM:
 To write a Python program to compute the **transpose** of a matrix using **list comprehension**.
