@@ -4,7 +4,6 @@
 To write a Python program to compute the **transpose** of a matrix using **list comprehension**.
 
 ---
-
 ## ALGORITHM:
 
 1. **Start**
