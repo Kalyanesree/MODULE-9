@@ -4,7 +4,6 @@
 To write a Python program that reads two matrices from the user and performs matrix subtraction.
 
 ---
-
 ## ALGORITHM:
 
 1. **Start**
