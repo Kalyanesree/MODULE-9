@@ -3,7 +3,6 @@
 This program demonstrates how to implement the **Insertion Sort algorithm** using a Python class. It allows the user to input a list of numbers, sorts them using the insertion sort technique, and displays the sorted list.
 
 ---
-
 ## Aim
 
 To develop a Python class with functions to:
